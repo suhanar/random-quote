@@ -17,7 +17,7 @@ Before running the application, make sure you have the following installed on yo
 
 bash
 
-git clone https://github.com/your-username/react-quote-generator.git
+git clone https://github.com/suhanar/random-quote.git
 
     Install dependencies:
 
