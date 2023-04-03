@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# React Quote Generator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React JS web application that generates random quotes, images, and background colors. It uses hooks such as useState, useEffect, useRef, and an API to fetch quotes.
+# Getting Started
+## Author
+Suhana Roshan
+## Prerequisites
 
-## Available Scripts
+Before running the application, make sure you have the following installed on your machine:
 
-In the project directory, you can run:
+    Node.js
+    NPM
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
 
-### `npm test`
+git clone https://github.com/suhanar/random-quote.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Install dependencies:
 
-### `npm run build`
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Start the application:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+sql
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm start
 
-### `npm run eject`
+The application will open in your default browser at http://localhost:3000/.
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Upon opening the application, you will see a button labeled "New Quote." Clicking this button will generate a new quote along with a random background color and image. You can also click on the Tweet button to share the quote on Twitter.
+## Components
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This application has three main components:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    App: This is the main component that holds the CardQuote component.
+    
+    CardQuote: This is the component that holds the state for the quote, background color, and image.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    Quote: This component displays the current quote and author.
 
-## Learn More
+    Button: This component displays a button that, when clicked, generates a new quote, background color, and image.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Hooks
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This application uses the following React hooks:
 
-### Code Splitting
+    useState: This hook is used to store the current quote, background color, and image.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    useEffect: This hook is used to fetch a new quote from the API when the application first loads and whenever the "New Quote" button is clicked.
 
-### Analyzing the Bundle Size
+    useRef: This hook is used to reference the quoteContainer div so that we can capture a screenshot of the quote to share on Twitter.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## API
 
-### Making a Progressive Web App
+This application uses the https://type.fit/api/quotes/ to fetch new quotes. 
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
