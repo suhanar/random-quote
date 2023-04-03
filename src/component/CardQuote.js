@@ -60,7 +60,7 @@ function CardQuote() {
         <Card.Title style={{fontSize:'18px',fontFamily:'cursive',color:'white',float:'right'}}>{quote.author}</Card.Title>
         
         <div className='mt-5 d-flex justify-content-center gap-2'>
-        <Button variant="danger" size="lg" onClick={getQuote} >Quote</Button>{' '}{' '}
+        <Button variant="danger" size="lg" onClick={getQuote} >New Quote</Button>{' '}{' '}
          
          <a  href={`https://twitter.com/intent/tweet?text=${quote.text}`} style={{fontSize:'20px',fontWeight:'500',color:'white'}} className='btn btn-warning' target='_blank'>Tweet</a>
       </div>
